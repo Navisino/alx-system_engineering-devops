@@ -1,1 +1,1 @@
-Script that changes users
+Creating scripts to execute commands
