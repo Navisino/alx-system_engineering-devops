@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
-#This script displays "Holberton School", at 9 print "Hi"
+#This script displays "Best School", at 9 print "Hi"
 i=0
 while ((i < 10)); do
-	echo "Holberton School"
+	echo "Best"
 	if ((i == 8)); then
 		echo "Hi"
 	fi
