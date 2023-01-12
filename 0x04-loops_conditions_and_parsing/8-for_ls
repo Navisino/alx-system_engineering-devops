@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-#Displays the content directory in a list format after character '-'
+# This script displays all files in current directory
 for i in *; do
-	echo "$i" | cut -f2 -d'-'
+    echo "$i" | cut -d'-' -f2
 done
