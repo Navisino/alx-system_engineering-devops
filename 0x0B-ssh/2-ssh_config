@@ -1,0 +1,4 @@
+# Server config options
+Host 212.49.88.111
+  IdentifyFile ~/.ssh/school
+  Protocal 2
