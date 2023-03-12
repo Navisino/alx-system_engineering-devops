@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# Run nginx as user nginx, including the master process
-pkill apache2
-sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default /etc/nginx/sites-available/default
-chown -R nginx /etc/nginx /var/log/nginx /usr/share/nginx
-chmod 777 /etc/nginx/nginx.conf
-su nginx -c nginx
+# fix container:: task 2
+pkill -f apache2
+chmod 644 /etc/nginx/nginx.conf
+sed -i "1i user nginx;" /etc/nginx/nginx.conf
+sed -i 's/80/8080/' /etc/nginx/sites-enabled/default
+sudo -u nginx service nginx restart
